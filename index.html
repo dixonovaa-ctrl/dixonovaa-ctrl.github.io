@@ -1,0 +1,360 @@
+<html lang="pl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Anna Kowalska | Psychoterapia &amp; Filozofia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
+    <style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fafaf9; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d6d3d1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a29e; 
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Hide images until loaded to prevent layout shift roughly */
+        img {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-stone-200 selection:text-stone-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-stone-50/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo: Initials, tight tracking -->
+            <a href="#" class="font-serif text-xl tracking-tighter text-stone-900 z-50 hover:opacity-70 transition-opacity">
+                A.K.
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-500">
+                <a href="#about" class="hover:text-stone-900 transition-colors">O mnie</a>
+                <a href="#project" class="hover:text-stone-900 transition-colors">Program</a>
+                <a href="#writing" class="hover:text-stone-900 transition-colors">Substack</a>
+                <a href="#gallery" class="hover:text-stone-900 transition-colors">Refleksje</a>
+                <span class="h-4 w-px bg-stone-300 mx-2"></span>
+                <button class="text-stone-900">PL</button>
+                <button class="text-stone-400 hover:text-stone-600">EN</button>
+            </div>
+
+            <!-- Mobile Menu Toggle (Icon only, implementation required via JS for logic, kept static for design) -->
+            <button class="md:hidden text-stone-900">
+                <span class="iconify" data-icon="lucide:menu" data-width="24" data-height="24"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+            <div class="md:col-span-8">
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tight text-stone-900 mb-8">
+                    Splatanie sensu <br>
+                    <span class="italic text-stone-600">z codziennych zdarzeń.</span>
+                </h1>
+                <p class="text-lg md:text-xl font-light text-stone-600 max-w-2xl leading-relaxed">
+                    Praktyka na pograniczu psychoanalizy, filozofii i literatury. 
+                    Przestrzeń dla myśli niespokojnej, szukającej struktury w chaosie doświadczenia.
+                </p>
+                <div class="mt-12 flex gap-4 text-sm font-medium tracking-wide uppercase text-stone-400">
+                    <span class="flex items-center gap-2"><span class="iconify" data-icon="lucide:brain-circuit" data-width="18" stroke-width="1.5"></span> Psychoterapia</span>
+                    <span class="flex items-center gap-2"><span class="iconify" data-icon="lucide:book-open" data-width="18" stroke-width="1.5"></span> Edukacja</span>
+                </div>
+            </div>
+            <div class="md:col-span-4">
+                <!-- Artistic Placeholder: Abstract Art -->
+                <div class="aspect-[3/4] w-full bg-stone-200 overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-700 ease-out">
+                    <img src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Abstrakcja - praca artystyczna" class="object-cover w-full h-full opacity-90">
+                    <div class="absolute bottom-4 left-4 text-xs text-white/80 font-medium tracking-wide mix-blend-difference">
+                        Art: M. Walczak
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Divider -->
+    <div class="w-full h-px bg-stone-200"></div>
+
+    <!-- About / Experience / Approach -->
+    <section id="about" class="py-20 md:py-32 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+            <div class="md:col-span-4">
+                <h2 class="font-serif text-3xl tracking-tight text-stone-900 mb-6">Perspektywa</h2>
+                <div class="text-stone-500 font-light text-sm leading-7 space-y-4">
+                    <p>
+                        Nie oferuję prostych rozwiązań, lecz narzędzia do zrozumienia złożoności. Pracuję w dwóch językach, co pozwala na uchwycenie niuansów znaczeniowych niedostępnych w monolingwistycznej narracji.
+                    </p>
+                    <p>
+                        Moim odbiorcą jest człowiek refleksyjny, często skonfliktowany wewnętrznie, dla którego intelekt jest zarówno tarczą, jak i więzieniem.
+                    </p>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-stone-200">
+                   <h3 class="text-sm font-medium text-stone-900 uppercase tracking-wider mb-4">Obszary pracy</h3>
+                   <ul class="space-y-2 text-stone-600 font-light text-sm">
+                       <li class="flex items-center gap-3">
+                           <span class="iconify text-stone-400" data-icon="lucide:fingerprint" data-width="16"></span>
+                           Kryzys tożsamości
+                       </li>
+                       <li class="flex items-center gap-3">
+                           <span class="iconify text-stone-400" data-icon="lucide:activity" data-width="16"></span>
+                           Zaburzenia lękowe
+                       </li>
+                       <li class="flex items-center gap-3">
+                           <span class="iconify text-stone-400" data-icon="lucide:scroll-text" data-width="16"></span>
+                           Analiza tekstów kultury
+                       </li>
+                   </ul>
+                </div>
+            </div>
+
+            <div class="md:col-span-8 space-y-12">
+                <div>
+                    <h3 class="font-serif text-2xl tracking-tight text-stone-900 mb-6 flex items-center gap-3">
+                        <span class="iconify" data-icon="lucide:graduation-cap" data-width="24" stroke-width="1.5"></span>
+                        Wykształcenie &amp; Doświadczenie
+                    </h3>
+                    <div class="border-l border-stone-200 ml-3 pl-8 space-y-10">
+                        <div class="relative group">
+                            <div class="absolute -left-[37px] top-1.5 h-4 w-4 rounded-full border border-stone-300 bg-stone-50 group-hover:bg-stone-300 transition-colors"></div>
+                            <span class="text-xs font-medium text-stone-400 mb-1 block">2018 — Obecnie</span>
+                            <h4 class="text-lg font-medium text-stone-900">Praktyka Prywatna / Wykładowca Akademicki</h4>
+                            <p class="text-stone-600 font-light mt-1">Warszawa / Londyn (Online)</p>
+                            <p class="text-sm text-stone-500 mt-2 max-w-xl">Prowadzenie psychoterapii indywidualnej oraz zajęć z zakresu psychologii klinicznej i psychoanalizy stosowanej.</p>
+                        </div>
+                        <div class="relative group">
+                            <div class="absolute -left-[37px] top-1.5 h-4 w-4 rounded-full border border-stone-300 bg-stone-50 group-hover:bg-stone-300 transition-colors"></div>
+                            <span class="text-xs font-medium text-stone-400 mb-1 block">2014 — 2018</span>
+                            <h4 class="text-lg font-medium text-stone-900">Doktorat: Filozofia Psychologii</h4>
+                            <p class="text-stone-600 font-light mt-1">Uniwersytet Jagielloński</p>
+                        </div>
+                         <div class="relative group">
+                            <div class="absolute -left-[37px] top-1.5 h-4 w-4 rounded-full border border-stone-300 bg-stone-50 group-hover:bg-stone-300 transition-colors"></div>
+                            <span class="text-xs font-medium text-stone-400 mb-1 block">2010 — 2014</span>
+                            <h4 class="text-lg font-medium text-stone-900">Certyfikacja Psychoterapeutyczna</h4>
+                            <p class="text-stone-600 font-light mt-1">Instytut Analizy Grupowej</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section: The Existential Crisis Program -->
+    <section id="project" class="bg-stone-900 text-stone-100 py-24 px-6 relative overflow-hidden">
+        <!-- Subtle background texture effect using SVG pattern or opacity -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"></path>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)"></rect>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-stone-700 text-xs font-medium uppercase tracking-widest text-stone-400 mb-6">
+                        Projekt w toku
+                    </div>
+                    <h2 class="font-serif text-4xl md:text-5xl tracking-tight mb-6 text-white">
+                        Architektura Kryzysu
+                    </h2>
+                    <p class="text-lg font-light text-stone-300 mb-8 leading-relaxed">
+                        Autorski program dedykowany osobom w kryzysie egzystencjalnym. To nie terapia, lecz ustrukturyzowana podróż intelektualna i emocjonalna, łącząca analizę tekstów filozoficznych z głęboką introspekcją.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3">
+                            <span class="iconify text-stone-400 mt-1" data-icon="lucide:check" data-width="18"></span>
+                            <span class="text-stone-300 font-light text-sm">Dekonstrukcja dotychczasowych wartości</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="iconify text-stone-400 mt-1" data-icon="lucide:check" data-width="18"></span>
+                            <span class="text-stone-300 font-light text-sm">Praca z pojęciem pustki i sensu</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="iconify text-stone-400 mt-1" data-icon="lucide:check" data-width="18"></span>
+                            <span class="text-stone-300 font-light text-sm">Ekskluzywne grupy warsztatowe (max 4 os.)</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#" class="group inline-flex items-center gap-3 text-white border-b border-white pb-1 hover:text-stone-300 hover:border-stone-300 transition-all">
+                        Dołącz do listy oczekujących
+                        <span class="iconify group-hover:translate-x-1 transition-transform" data-icon="lucide:arrow-right" data-width="16"></span>
+                    </a>
+                </div>
+                <div class="relative h-[400px] lg:h-[500px] w-full bg-stone-800 flex items-center justify-center overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1505904267569-f02eaeb45a4c?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Architektura Kryzysu" class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-overlay">
+                    <div class="border border-white/20 p-8 text-center bg-stone-900/50 backdrop-blur-sm max-w-xs">
+                        <span class="block text-4xl font-serif italic mb-2">„Pustka”</span>
+                        <span class="text-xs text-stone-400 uppercase tracking-widest">Wkrótce</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Substack / Writings Section -->
+    <section id="writing" class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="flex items-end justify-between mb-16 border-b border-stone-200 pb-4">
+            <h2 class="font-serif text-3xl tracking-tight text-stone-900">Publikacje</h2>
+            <a href="#" class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-1">
+                Substack
+                <span class="iconify" data-icon="lucide:external-link" data-width="14"></span>
+            </a>
+        </div>
+
+        <div class="space-y-2">
+            <!-- Article Item 1 -->
+            <a href="#" class="group block p-6 -mx-6 rounded-lg hover:bg-white hover:shadow-sm hover:shadow-stone-200/50 transition-all duration-300 border border-transparent hover:border-stone-100">
+                <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
+                    <h3 class="text-xl font-medium text-stone-800 group-hover:text-black tracking-tight">Melancholia jako akt oporu</h3>
+                    <span class="text-xs font-mono text-stone-400 shrink-0">12 PAŹ 2023</span>
+                </div>
+                <p class="mt-2 text-stone-500 font-light text-sm max-w-2xl group-hover:text-stone-600">
+                    Analiza zjawiska smutku w kulturze przymusu szczęścia. Dlaczego pozwolenie sobie na utratę jest pierwszym krokiem do odzyskania podmiotowości.
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="px-2 py-0.5 bg-stone-100 text-stone-500 text-[10px] uppercase tracking-wider rounded">Esej</span>
+                    <span class="px-2 py-0.5 bg-stone-100 text-stone-500 text-[10px] uppercase tracking-wider rounded">Kultura</span>
+                </div>
+            </a>
+
+            <!-- Article Item 2 -->
+            <a href="#" class="group block p-6 -mx-6 rounded-lg hover:bg-white hover:shadow-sm hover:shadow-stone-200/50 transition-all duration-300 border border-transparent hover:border-stone-100">
+                <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
+                    <h3 class="text-xl font-medium text-stone-800 group-hover:text-black tracking-tight">Sny o końcu świata: perspektywa jungowska</h3>
+                    <span class="text-xs font-mono text-stone-400 shrink-0">28 WRZ 2023</span>
+                </div>
+                <p class="mt-2 text-stone-500 font-light text-sm max-w-2xl group-hover:text-stone-600">
+                    Interpretacja powtarzających się motywów apokaliptycznych w snach moich pacjentów w kontekście lęku klimatycznego.
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="px-2 py-0.5 bg-stone-100 text-stone-500 text-[10px] uppercase tracking-wider rounded">Psychoanaliza</span>
+                </div>
+            </a>
+
+            <!-- Article Item 3 -->
+            <a href="#" class="group block p-6 -mx-6 rounded-lg hover:bg-white hover:shadow-sm hover:shadow-stone-200/50 transition-all duration-300 border border-transparent hover:border-stone-100">
+                <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
+                    <h3 class="text-xl font-medium text-stone-800 group-hover:text-black tracking-tight">Język jako dom i wygnanie</h3>
+                    <span class="text-xs font-mono text-stone-400 shrink-0">05 WRZ 2023</span>
+                </div>
+                <p class="mt-2 text-stone-500 font-light text-sm max-w-2xl group-hover:text-stone-600">
+                    O doświadczeniu dwujęzyczności w terapii. Jak zmiana kodu językowego zmienia dostęp do traumy i wspomnień.
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="px-2 py-0.5 bg-stone-100 text-stone-500 text-[10px] uppercase tracking-wider rounded">Językoznawstwo</span>
+                    <span class="px-2 py-0.5 bg-stone-100 text-stone-500 text-[10px] uppercase tracking-wider rounded">Osobiste</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery / Reflections -->
+    <section id="gallery" class="py-24 px-6 bg-white border-t border-stone-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-serif text-3xl tracking-tight text-stone-900 mb-12 text-center">Fragmenty &amp; Obrazy</h2>
+            
+            <!-- Masonry-like Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="space-y-4">
+                    <div class="aspect-[4/5] w-full overflow-hidden bg-stone-100">
+                        <img src="https://images.unsplash.com/photo-1515462277126-2dd0c162007a?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0" alt="Refleksja 1">
+                    </div>
+                    <div class="pr-4">
+                        <p class="text-xs font-mono text-stone-400 mb-2">#01 • OBSERWACJA</p>
+                        <p class="text-sm font-light text-stone-700 italic">"Cisza w gabinecie nigdy nie jest pusta. Jest gęsta od niewypowiedzianych słów."</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 (Offset top for masonry feel) -->
+                <div class="space-y-4 md:pt-16">
+                    <div class="aspect-square w-full overflow-hidden bg-stone-100">
+                        <img src="https://images.unsplash.com/photo-1549289524-1e128f92178a?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0" alt="Refleksja 2">
+                    </div>
+                    <div class="pr-4">
+                        <p class="text-xs font-mono text-stone-400 mb-2">#02 • SZTUKA</p>
+                         <p class="text-sm font-light text-stone-700 italic">"Patrzenie wymaga odwagi zobaczenia tego, co ukryte pod warstwą farby i konwenansu."</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="space-y-4">
+                     <div class="aspect-[3/4] w-full overflow-hidden bg-stone-100">
+                        <img src="https://images.unsplash.com/photo-1510936111840-65e151ad71bb?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0" alt="Refleksja 3">
+                    </div>
+                    <div class="pr-4">
+                        <p class="text-xs font-mono text-stone-400 mb-2">#03 • NATURA</p>
+                         <p class="text-sm font-light text-stone-700 italic">"Cykl więdnięcia jest równie ważny co cykl wzrostu. Zapominamy o tym, forsując wieczną wiosnę."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-50 border-t border-stone-200 py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+            <div>
+                <a href="#" class="font-serif text-2xl tracking-tighter text-stone-900 block mb-6">A.K.</a>
+                <p class="text-sm font-light text-stone-500 max-w-xs mb-8">
+                    Psychoterapia. Filozofia. Literatura.<br>
+                    Splatanie sensu z codziennych zdarzeń.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors">
+                        <span class="iconify" data-icon="lucide:instagram" data-width="20"></span>
+                    </a>
+                    <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors">
+                        <span class="iconify" data-icon="lucide:linkedin" data-width="20"></span>
+                    </a>
+                    <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors">
+                        <span class="iconify" data-icon="lucide:mail" data-width="20"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-12 text-sm font-light text-stone-500">
+                <div class="flex flex-col gap-3">
+                    <span class="font-medium text-stone-900 mb-1">Mapa</span>
+                    <a href="#about" class="hover:text-stone-800 transition-colors">O mnie</a>
+                    <a href="#project" class="hover:text-stone-800 transition-colors">Projekt</a>
+                    <a href="#writing" class="hover:text-stone-800 transition-colors">Teksty</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-medium text-stone-900 mb-1">Kontakt</span>
+                    <a href="mailto:kontakt@annakowalska.pl" class="hover:text-stone-800 transition-colors">E-mail</a>
+                    <span class="text-stone-400">Rezerwacja wizyt (ZnanyLekarz)</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-stone-200 text-xs text-stone-400 flex flex-col md:flex-row justify-between gap-4">
+            <span>© 2023 Dr. Anna Kowalska. Wszelkie prawa zastrzeżone.</span>
+            <span>Ilustracje: Małgorzata Walczak</span>
+        </div>
+    </footer>
+
+
+</body></html>
